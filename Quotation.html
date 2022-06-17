@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/Logo-Icon.png">
+  <link rel="stylesheet" type="text/css" href="./css/Revolution.css">
+  <title>Core CMP - Quotation</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul class="navbar_logo">
+      <li class="logo_item"><img id="logo_img" src="./img/Logo-Icon.png"></li>
+      <li class="logo_item"><a id="logo_text" href="./Home.html">CORE CMP</a></li>
+  </ul>
+    <ul class="navbar_menu">
+        <li class="navbar_menu_item">
+            <a class="navbar_menu_item_link help" href="#">Help</a>
+        </li>
+        <li class="navbar_menu_item">
+            <a class="navbar_menu_item_link fas fa-user" onclick="dropdownMenuShow()"></a>
+            <ul class="navbar_menu dropdown">
+                <li class="navbar_menu_item submenu_dropdown dropdown_arrow"></li>
+                <li class="navbar_menu_item submenu_dropdown user_info">
+                    <img class="imgUser" src="../../_Main/Img/default_user.png" alt="User image">
+                    <span class="user_name_dropdown" href="#">Renyson Eduardo</span>
+                </li>
+                <li class="navbar_menu_item submenu_dropdown"><a class="navbar_menu_item_link help burger" href="#">Help</a></li>
+                <li class="navbar_menu_item submenu_dropdown"><a class="navbar_menu_item_link" id="logout_dropdown" onclick="LogUserOut()" href="#">Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+  <div class="tabs_main_menu">
+    <ul class="tab_nav">
+      <li class="tab_option">
+        <a href="../../4 - Revolution/HTML/Part List.html">Part List</a>
+      </li>
+      <li class="tab_option">
+        <a href="../../4 - Revolution/HTML/Illustration.html">Illustration</a>
+      </li>
+      <li class="tab_option">
+        <a href="../../4 - Revolution/HTML/Text.html">Text</a>
+      </li>
+      <li class="tab_option">
+        <a id="is_active" href="../../4 - Revolution/HTML/Quotation.html">Quotation</a>
+      </li>
+    </ul>
+  </div>
+  <main class="main_content">
+    <section class="search_area">
+      <input type="text" id="search_elements" class="ata_number" placeholder="ATA Number">
+      <input type="text" id="search_elements" class="ipl_search" placeholder="Applicability Part Number">
+      <input type="text" id="search_elements" class="other_results" placeholder="Name">
+      <input type="text" id="search_elements" class="other_results" placeholder="Part number">
+      <input type="text" id="search_elements" class="other_results" placeholder="Applicability">
+      <input type="text" id="search_elements" placeholder="Version Control" readonly>
+      <button type="submit" id="search_elements" class="search_in_ipl">Search</button>
+    </section>
+    <hr class="divide_page_sections">
+    <div class="progress_status">
+      <div class="container">
+        <!-- adicionar icones com js -->
+        <div class="command_btn">
+          <button class="bom_btn">
+            <span>Bom</span>
+          </button>
+          <div class="status_bar_icon status_ok"></div>
+          <div class="status_bar_icon status_error"></div>
+        </div>
+        <div class="command_btn">
+          <button class="checkIpl_btn">
+            <span>Cross Bom x Database</span>
+          </button>
+          <div class="status_bar_icon status_ok"></div>
+          <div class="status_bar_icon status_error"></div>
+        </div>
+        <div class="command_btn">
+          <button class="fillIsn_btn">
+            <span>Revolution Estimates</span>
+          </button>
+          <div class="status_bar_icon status_ok"></div>
+          <div class="status_bar_icon status_error"></div>
+        </div>
+        <div class="command_btn">
+          <button class="checkDfl_btn">
+            <span>Add Applicability</span>
+          </button>
+          <div class="status_bar_icon status_ok"></div>
+          <div class="status_bar_icon status_error"></div>
+        </div>
+        <div class="command_btn">
+          <button class="updatedDb_btn">
+            <span>Updated Database</span>
+          </button>
+          <div class="status_bar_icon status_ok"></div>
+          <div class="status_bar_icon status_error"></div>
+        </div>
+        <div class="command_btn">
+          <button class="updatedDb_btn">
+            <span>Updated Database</span>
+          </button>
+          <div class="status_bar_icon status_ok"></div>
+          <div class="status_bar_icon status_error"></div>
+        </div>
+      </div>
+      <div class="progress_status_bar">
+        <!-- barra de progresso atualizar de acordo com o processo rodado-->
+        <progress class="progress_bar" value="19" max="100"></progress>
+      </div>
+    </div>
+    <hr class="divide_page_sections">
+    <div class="enable_edit">
+      <button id="edit_btn">Edit</button>
+      <button id="save_btn">Save</button>
+    </div>
+    <div class="table-wrapper">
+      <table class="main_table">
+        <thead class="table_header">
+          <tr>
+            <th>Technical Name</th>
+            <th>Information Name</th>
+            <th>Name</th>
+            <th>Part Number</th>
+            <th>Status</th>
+            <th>Level</th>
+            <th>Hours</th>
+            <th>Applicability Part Number</th>
+            <th>Applicability</th>
+          </tr>
+        </thead>
+        <tbody id="List_Table">
+          <tr>
+            <td>Galley G1</td>
+            <td>Title Page</td>
+            <td>DME-4050G-GEN-A320-A-25-71-001X-01001-001A-C</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>601851-020801</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/revolution.js"></script>
+  </main>
+</body>
+
+</html>

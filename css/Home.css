@@ -1,0 +1,70 @@
+/* Import from main.css the constants value */
+@import './index.css';
+/*Format the buttons Group menu option in page home*/
+#main_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 94.6%;
+}
+.main-content ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.group-selection {
+    display: flex;
+    margin: 50px 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.group-selection .button-group{
+    font-size: 1.3em;
+    line-height: 50px;
+    height: 50px;
+    width: 200px;
+    display: block;
+    background: var(--light_white);
+    text-align: center;
+    box-shadow: 0 10px 10px var(--light_black);
+    border-radius: 25px;
+    border: 0 transparent;
+    font-family:var(--FontFamily);
+    cursor: pointer;
+    z-index: 4;
+}
+.group-selection .toolTipText{
+    position: absolute;
+    top: 0px;
+    background: var(--light_green);
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px var(--light_black);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.toolTipText.showTooltip{
+    top: 70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.group-selection .button-group {
+    background-color:var(--dark_green) ;
+    color: var(--white);
+}
+.group-selection .button-group:hover{
+    background-color: var(--white);
+    color:var(--dark_green);
+    box-shadow: 1px 5px 5px var(--dark_grey);
+}
+.group-selection .button-group:active{
+    box-shadow: 1px 5px 5px var(--dark_grey);
+    transform: translateY(2px);
+}
+
