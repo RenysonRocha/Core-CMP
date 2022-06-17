@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../_Main/Img/Logo-Icon.png">
+    <link rel="stylesheet" type="text/css" href="../../4 - Revolution/CSS/Main.css">
+    <title>Core CMP - Cross IPL x BOM</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar_logo">
+            <li class="logo_item"><img id="logo_img" src="../../_Main/Img/Logo-Icon.png"></li>
+            <li class="logo_item"><a id="logo_text" href="../../3 - Home/HTML/Home.html">CORE CMP</a></li>
+        </ul>
+        <ul class="navbar_menu">
+            <li class="navbar_menu_item">
+                <a class="navbar_menu_item_link help" href="#">Help</a>
+            </li>
+            <li class="navbar_menu_item">
+                <a class="navbar_menu_item_link fas fa-user" onclick="dropdownMenuShow()"></a>
+                <ul class="navbar_menu dropdown">
+                    <li class="navbar_menu_item submenu_dropdown dropdown_arrow"></li>
+                    <li class="navbar_menu_item submenu_dropdown user_info">
+                        <img class="imgUser" src="../../_Main/Img/default_user.png" alt="User image">
+                        <span class="user_name_dropdown" href="#">Renyson Eduardo</span>
+                    </li>
+                    <li class="navbar_menu_item submenu_dropdown"><a class="navbar_menu_item_link help burger" href="#">Help</a></li>
+                    <li class="navbar_menu_item submenu_dropdown"><a class="navbar_menu_item_link" id="logout_dropdown" onclick="LogUserOut()" href="#">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Aqui começa as informacoes de IPL e status do check-->
+    <main class="main_content">
+        <div class="progress_status">
+            <div class="container">
+                <!-- adicionar icones com js -->
+                <div class="command_btn">
+                    <button class="bom_btn">
+                        <span>Finish Cross IPLxBom</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <hr class="divide_page_sections">
+        <div class="table-wrapper">
+            <div class="table_division">
+                <table class="main_table">
+                    <thead class="table_header">
+                        <tr>
+                            <th>Bom Level</th>
+                            <th>Part Number</th>
+                            <th>Nomenclature</th>
+                            <th>Quantity</th>
+                            <th>Results</th>
+                        </tr>
+                    </thead>
+                    <tbody id="list_Table_Bom">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="table_division">
+                <table class="main_table">
+                    <thead class="table_header">
+                        <tr>
+                            <th>Fig IPL</th>
+                            <th>IPL Level</th>
+                            <th>Part Number IPL</th>
+                            <th>Nomenclature</th>
+                            <th>Quantity</th>
+                            <th>Attaching Part</th>
+                            <th>Results</th>
+                        </tr>
+                    </thead>
+                    <tbody id="List_Table">
+                        <tr>
+                            <td>01_001</td>
+                            <td>1</td>
+                            <td>601851-020801</td>
+                            <td>GALLEY G1</td>
+                            <td>1</td>
+                            <td></td>
+                            <td>False</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table_division">
+                <table class="main_table">
+                    <thead class="table_header">
+                        <tr>
+                            <th>Cascate Bom</th>
+                            <th>Cascate IPL</th>
+                            <th>Quantity BOM</th>
+                            <th>Quantity IPL</th>
+                            <th>RFT</th>
+                            <th>Fig</th>
+                            <th>Var</th>
+                        </tr>
+                    </thead>
+                    <tbody id="List_Table">
+                        <tr>
+                            <td>601851-020801</td>
+                            <td>601851-020801</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>RFT 01</td>
+                            <td>01</td>
+                            <td>001</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <!-- Aqui termina as informacoes de IPL e status do check-->
+    <script src="../../_Main/JS/Main.js"></script>
+    <script src="../../3 - Home/JS/Main.js"></script>
+    <script src="../JS/main.js"></script>
+</body>
+
+</html>

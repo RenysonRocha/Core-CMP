@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../_Main/Img/Logo-Icon.png">
+    <link rel="stylesheet" href="https:/stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../1 - Join Now/CSS/Join Now.css">
+    <title>Sign Up | Core CMP</title>
+</head>
+<body>
+    <div id="Container_userRegister">
+        <ul class="navbar_logo">
+            <li class="logo_item"><img id="logo_img" src="../../_Main/Img/Logo-Icon.png"></li>
+            <li class="logo_item"><a id="logo_text" href="">CORE CMP</a></li>
+        </ul>
+        <div class="form_layout">
+            <div id="msg_joinnow">
+                <span class="msg_text"></span>
+                <div class="showdot">
+                    <div class="dot dot1"></div>
+                    <div class="dot dot2"></div>
+                    <div class="dot dot3"></div>
+                </div>
+            </div>
+            <label class="text_selector">
+                <input class="input_selector" value="BFE" id="input_BFE" type="checkbox">
+                <span>BFE</span> 
+            </label>
+            <label class="text_selector">
+                <input class="input_selector" value="MCMM" id="input_MCMM" type="checkbox">
+                <span>MCMM</span>
+            </label>
+            <label class="text_selector">
+                <input class="input_selector" value="REVOLUTION" id="input_REVOLUTION" type="checkbox">
+                <span>REVOLUTION</span>
+            </label>
+            <label class="text_selector">
+                <input class="input_selector" value="SFE" id="input_SFE" type="checkbox">
+                <span>SFE</span>
+            </label>
+            <div class="user_name_register">
+                <label class="label_form" id="msg_name" for="">Name</label><br>
+                <input type="text" class="input_style" id="name_register" placeholder="First and Last name">
+            </div>
+            <div class="login">
+                <label class="label_form" id="msg_login" for="">Login</label><br>
+                <input type="text" class="input_style" id="login_register" placeholder="Username">
+            </div>
+            <div class="password">
+                <label class="label_form" id="msg_password" for="">Password</label><br>
+                <input type="password" class="input_style" id="password_register" placeholder="********">
+                <i id="eye_Button_password" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+            <div class="password_confirm">
+                <label class="label_form" id="msg_confirm_password" for="">Confirm Password</label><br>
+                <input type="password" class="input_style" id="password_Confirm_register" placeholder="********">
+                <i id="eye_Button_confirm_password" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="button_submit">
+            <button type="submit" onclick="validateUserInformation()">Join now</button>
+            <p id="userRegisterLink"><span>Already on Core CMP? </span><a href="../../2 - Sign In/HTML/Sign in.html">Sign in!</a></p>
+        </div>
+    </div>
+    <script src="../../_Main/JS/Main.js"></script>
+    <script src="../../1 - Join Now/JS/join now.js"></script>
+</body>
+</html>

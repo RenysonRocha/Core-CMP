@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../_Main/Img/Logo-Icon.png">
+    <link rel="stylesheet" type="text/css" href="../../4 - Revolution/CSS/Main.css">
+    <title>Core CMP - Cross IPL x Illustration</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar_logo">
+            <li class="logo_item"><img id="logo_img" src="../../Main/Img/Logo-Icon.png"></li>
+            <li class="logo_item"><a id="logo_text" href="../../3 - Home/HTML/Home.html">CORE CMP</a></li>
+        </ul>
+        <ul class="navbar_menu">
+            <li class="navbar_menu_item">
+                <a class="navbar_menu_item_link help" href="#">Help</a>
+            </li>
+            <li class="navbar_menu_item">
+                <a class="navbar_menu_item_link fas fa-user" onclick="dropdownMenuShow()"></a>
+                <ul class="navbar_menu dropdown">
+                    <li class="navbar_menu_item submenu_dropdown dropdown_arrow"></li>
+                    <li class="navbar_menu_item submenu_dropdown user_info">
+                        <img class="imgUser" src="../../_Main/Img/default_user.png" alt="User image">
+                        <span class="user_name_dropdown" href="#">Renyson Eduardo</span>
+                    </li>
+                    <li class="navbar_menu_item submenu_dropdown"><a class="navbar_menu_item_link help burger" href="#">Help</a></li>
+                    <li class="navbar_menu_item submenu_dropdown"><a class="navbar_menu_item_link" id="logout_dropdown" onclick="LogUserOut()" href="#">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="progress_status">
+            <div class="container">
+                <!-- adicionar icones com js -->
+                <div class="command_btn">
+                    <button class="bom_btn">
+                        <span>Finish Cross ILLxIPL</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <hr class="divide_page_sections">
+        <div class="table-wrapper">
+            <div class="table_division">
+                <table class="main_table">
+                    <thead class="table_header">
+                        <tr>
+                            <th>ICN</th>
+                            <th>IPL Item</th>
+                            <th>IPL Quantity</th>
+                            <th>Attaching Part</th>
+                            <th>ILL Fig Item</th>
+                            <th>ILL Quantity</th>
+                            <th>Status</th>
+                            <th>Detail / Location</th>
+                        </tr>
+                    </thead>
+                    <tbody id="List_Table">
+                        <tr>
+                            <td>ICN-A320-A-2571001X-C-4050G-00252-A-001-01</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td></td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>False</td>
+                            <td>A 1PL</td>
+                        </tr>
+                        <tr>
+                            <td>ICN-A320-A-2571001X-C-4050G-00252-A-001-01</td>
+                            <td>20</td>
+                            <td>4</td>
+                            <td>X</td>
+                            <td>20</td>
+                            <td>1</td>
+                            <td>False</td>
+                            <td>B 2PL</td>
+                        </tr>
+                        <tr>
+                            <td>ICN-A320-A-2571001X-C-4050G-00252-A-001-01</td>
+                            <td>30</td>
+                            <td>50</td>
+                            <td>X</td>
+                            <td>30</td>
+                            <td>1</td>
+                            <td>False</td>
+                            <td>C 3PL</td>
+                        </tr>
+                        <tr>
+                            <td>ICN-A320-A-2571001X-C-4050G-00252-A-001-01</td>
+                            <td>40</td>
+                            <td>5</td>
+                            <td></td>
+                            <td>40</td>
+                            <td>1</td>
+                            <td>False</td>
+                            <td>D 2PL</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </main>
+    <script src="../../_Main/JS/Main.js"></script>
+    <script src="../../3 - Home/JS/Main.js"></script>
+</body>
+
+</html>
