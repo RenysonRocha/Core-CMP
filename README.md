@@ -47,4 +47,8 @@ A barra de progresso serve para mostrar em qual etapa o processo está, dando um
 
 E as tabelas são usadas para mostrar os dados importados do banco de dados, habilitando através do botão ao lado direito "edit" e "save".
 
+link para acessar a plataforma:
+
+https://renysonrocha.github.io/Core-CMP/
+
 Projeto em desenvolvimento (WIP)
