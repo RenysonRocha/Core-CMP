@@ -35,10 +35,10 @@ function getUserNameFromStorage(userId) {
 
 //in case of the user try to access the page without the token validation, the page
 //returns to login page
+exitWithoutToken()
 function exitWithoutToken() {
   if (
-    localStorage.getItem("token") == null &&
-    window.location.href == homeLocalhost
+    localStorage.getItem("token") == null
   ) {
     alert("To access this page, please, inform login and password");
     window.location.href = signInLocalhost;
