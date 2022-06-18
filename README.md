@@ -6,19 +6,31 @@ Essee projeto tem como proposito desenvolver um software que possa controlar o p
 
 No momento a ferramente esta fazendo o cadastro do usuário utilizando JSON e armazenando em Local Storage.
 Esse cadastro de usuário, faz as seguintes validações:
+
     1 - Selecionar qual o projeto você terá acesso para exercutar as tarefas;
+
     2 - Valida se o nome possui mais que 3 Caracteres;
+
     3 - Valida que se o usuario esta separado por "ponto(.)";
+
     4 - Valida se a senha possui a partir de 6 caracteres;
+
     5 - Valida que no campo de confirmação de senha, esta de acordo com o campo senha;
+
     6 - Caso algum das informações acima estiverem faltando, o processo de cadastro não proceguirá;
+
 
 Na tela de login, vocë consegue acessar a plataforma informando os dados cadastrados.
 A validação dos dados é feita via JSON, importando esses dados do Local Storage e verificando se esta de acordo, fazendo tambem as seguintes validações:
+
     1 - Verificando se o usuário esta preenchido;
+
     2 - Verificando se a senha esta preenchida;
+
     3 - Verificando se o usuário esta de acordo com o cadastrado;
+
     4 - Verifica se a senha esta de acordo com a cadastrada;
+
 
 Após passar pela tela de login, é possivel ver a pagina Home, onde será possivél selecionar o projeto que está atuando, caso tente acessar algum projeto que não foi liberado no processo de cadastro, terá o solicitação negada.
 Atualmente somente o projeto Revolution possui estrutura para fazer o acesso as funcionalidades.
@@ -36,5 +48,3 @@ A barra de progresso serve para mostrar em qual etapa o processo está, dando um
 E as tabelas são usadas para mostrar os dados importados do banco de dados, habilitando através do botão ao lado direito "edit" e "save".
 
 Projeto em desenvolvimento (WIP)
-
-Adicionando essa linha para subir a ultima versão da pasta
