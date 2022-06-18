@@ -2,7 +2,7 @@
 
 Esse projeto esta sendo elaborado usando como referência uma aplicação desenvolvida em Excel usando liguagem de programação VBA, SQL, funcionalidades como Power Query, table pivoting, importação de dados via MS Access.
 
-Essee projeto tem como proposito desenvolver um software que possa controlar o processo, garantir a qualidade do produto e certificar que todas as formas de validação estão sendo utilizadas.
+Esse projeto tem como proposito desenvolver um software que possa controlar o processo, garantir a qualidade do produto e certificar que todas as formas de validação estão sendo utilizadas.
 
 No momento a ferramente esta fazendo o cadastro do usuário utilizando JSON e armazenando em Local Storage.
 Esse cadastro de usuário, faz as seguintes validações:
@@ -20,7 +20,7 @@ Esse cadastro de usuário, faz as seguintes validações:
     6 - Caso algum das informações acima estiverem faltando, o processo de cadastro não proceguirá;
 
 
-Na tela de login, vocë consegue acessar a plataforma informando os dados cadastrados.
+Na tela de login, você consegue acessar a plataforma informando os dados cadastrados.
 A validação dos dados é feita via JSON, importando esses dados do Local Storage e verificando se esta de acordo, fazendo tambem as seguintes validações:
 
     1 - Verificando se o usuário esta preenchido;
