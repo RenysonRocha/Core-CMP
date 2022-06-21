@@ -36,6 +36,7 @@ function importBom() {
           tdBom.innerHTML = fr.result;
           trBom.appendChild(tdBom)
           let tableBom = document.getElementById('list_Table_Bom').appendChild(trBom)
+          window.location.href = './Check Part list.html'
         }
               
         fr.readAsText(this.files[0]);
